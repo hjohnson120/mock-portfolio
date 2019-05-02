@@ -35,7 +35,6 @@ body {
   height: 10%;
 }
 .speech-bubble:after {
-  display: flex;
   content: '';
   position: absolute;
   bottom: 0;
@@ -52,7 +51,6 @@ body {
 }
 .side-by-side {
   display: flex;
-  justify-content: column;
 }
 .bubble {
   list-style: none;
@@ -71,4 +69,17 @@ body {
   padding: 4%;
   margin: 1%;
   height: 5%;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.twitter {
+  display: flex;
+  list-style: none;
+  border-radius: 50%;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 80%;
 }
