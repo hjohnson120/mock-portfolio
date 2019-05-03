@@ -27,8 +27,8 @@ body {
   border-radius: 5px;
   margin-top: 4%;
 }
-h1 {
-  margin: 3%;
+p {
+  margin: 0%;
 }
 .intro {
   font-size: 1rem;
@@ -73,21 +73,30 @@ h1 {
 }
 .box {
   background-image: url('react.png');
+  background-size: 100%;
   display: flex;
-  width: 98%;
+  width: 92%;
   padding: 4%;
   margin: 0%;
+}
+.box2 {
+  background-image: url('code.png');
+  background-size: 100%;
+  width: 92%;
+  padding: 4%;
+  margin-top: 0%;
 }
 .round-border {
   border-radius: 5%;
 }
 .text-box {
-  display: flex;
-  width: 96%;
+  max-width: 100%;
   background-color: lightcyan;
-  padding: 4%;
-  margin: 0%;
-  height: 5%;
+  padding: 0%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 h3 {
   text-align: center;
@@ -95,15 +104,18 @@ h3 {
   color: white;
   margin: 8%;
 }
+h1 {
+  margin: 3%;
+}
 .twitter {
   height: 75%;
-  width: 75%;
+  width: 50%;
   display: flex;
   list-style: none;
   border-radius: 60%;
   justify-content: center;
   max-width: 100%;
-  padding: 4%;
+  padding: 2%;
 }
 .small-box {
   width: 20%;
@@ -113,5 +125,11 @@ h3 {
   float: right;
   text-align: center;
   padding: 1%;
-  margin: 0%;
+}
+
+@media screen and (min-width 480px) {
+  body {
+    background-size: 100%;
+    background-attachment: ;
+  }
 }
