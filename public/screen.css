@@ -10,10 +10,11 @@ html {
 
 body {
   margin: 0;
+  background-color: black;
+  background-position: 50% 100%;
   background-image: url('space.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .tiny-pics {
   display: flex;
@@ -21,10 +22,11 @@ body {
   list-style: none;
   justify-content: space-between;
   margin: 11%;
+  align-content: center;
 }
 .profile-pic {
-  width: 300px;
-  height: 310px;
+  width: 200px;
+  height: 180px;
   border-radius: 5px;
   margin-top: 2%;
 }
@@ -39,8 +41,8 @@ p {
   position: relative;
   background: lightgray;
   border-radius: 0.4em;
-  opacity: 0.8;
-  width: 35%;
+  opacity: 0.9;
+  width: 39%;
   height: 10%;
   margin-left: 2.5%;
 }
@@ -57,7 +59,7 @@ p {
   border-left: 0;
   margin-left: -17.5px;
   margin-bottom: -35px;
-  opacity: 1;
+  opacity: 3;
 }
 .side-by-side {
   display: flex;
@@ -70,14 +72,15 @@ p {
   display: flex;
   justify-content: center;
   max-width: 100%;
-  margin: 15%;
+  margin: 10%;
 }
 .box {
   background-image: url('react.png');
   background-size: 100%;
-  padding: 4%;
-  margin: 0%;
   width: 92%;
+  padding: 4%;
+  margin-top: 0%;
+  border-radius: 8px 8px 0px 0px;
 }
 .box2 {
   background-image: url('code.png');
@@ -85,23 +88,25 @@ p {
   width: 92%;
   padding: 4%;
   margin-top: 0%;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .text-box {
   max-width: 100%;
-  background-color: lightcyan;
+  background-color: #fcf7f8;
   padding: 0%;
   padding-bottom: 2%;
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
-  border-radius: 2%;
+  border-radius: 8px;
 }
 h3 {
   text-align: center;
   font-size: 2rem;
   color: white;
-  margin: 8%;
+  margin-top: 8%;
+  padding-top: 5%;
 }
 h1 {
   margin: 3%;
@@ -120,28 +125,21 @@ h1 {
 }
 .small-box {
   width: 11%;
-  background-color: blue;
+  background-color: #0082f4;
   color: white;
   height: 2%;
   float: right;
   text-align: center;
   padding: 1%;
-  margin: -2%;
-  border-radius: 5%;
+  margin-top: -0.5%;
+  border-radius: 8%;
+  margin-right: 2%;
 }
-.black-back {
-  background: black;
-  background-size: 100% 50%;
-  opacity: 0.8;
-  background-blend-mode: darken;
-}
-.bottom {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-@media screen and (min-width 480px) {
+
+@media screen and (min-width 600px) {
   body {
     background-size: 100%;
     background: black;
+    background-position: top;
   }
 }
